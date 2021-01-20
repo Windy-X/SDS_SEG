@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SysConfig>
+	<!-- 绘图设置 -->
+	<PlotSetup>
+		<PageTimeScale>
+			<!-- 可选每页时长，单位分钟，进行配置 -->
+			<item>2</item>
+			<item>2</item>
+			<item>4</item>
+			<item>8</item>
+			<item>16</item>
+			<item>32</item>
+		</PageTimeScale>
+		<!-- 选段最小长度，单位秒 -->
+		<MinSegLen>30</MinSegLen>
+		<!--绘图窗口右侧预留窗口，单位cm -->
+		<ReservedWidth>5.5</ReservedWidth>
+		<RawPlot>
+			<Channel Index = "1" StretchFactor="1" Div="10">
+				<LeftAxis DownBound="0.00" UpBound="150.00" Precision="0" Min="0" Max="400" MinRange="30" Step="10"/>
+				<LineCurves>
+					<item Name="HR" Visible="1" Data="0" Width="1" Trend="0" IgnoreVacant="0" RightAligned="0"/>
+				</LineCurves>
+				<Index ShowChannelName="0" ChannelName="" Type="4">
+					<item Data="0" ShowInfo="1" ShowRange="1" ShowUnit="1" ShowPercent="1"/>
+				</Index>
+			</Channel>
+			<Channel Index = "2" StretchFactor="2.7" Div="6">
+				<LeftAxis DownBound="125.00" UpBound="325.00" Precision="0" Min="0" Max="400" MinRange="30" Step="10"/>
+				<BandCurves>
+					<item Name="NIBP" Visible="1" DataUp="6" DataDown="7" Width="1" IgnoreVacant="0" RightAligned="0"/>
+				</BandCurves>
+				<LineCurves>
+					<item Name="" Visible="1" Data="8" Width="2" Trend="1" IgnoreVacant="0" RightAligned="0"/>
+				</LineCurves>
+				<Index ShowChannelName="0" ChannelName="" Type="4">
+					<item Data="6" ShowInfo="1" ShowRange="1" ShowUnit="1" ShowPercent="1"/>
+					<item Data="7" ShowInfo="1" ShowRange="1" ShowUnit="1" ShowPercent="1"/>
+					<item Data="8" ShowInfo="1" ShowRange="1" ShowUnit="1" ShowPercent="1"/>
+				</Index>
+			</Channel>
+			<Channel Index = "3" StretchFactor="1" Div="10">
+				<LeftAxis DownBound="38.00" UpBound="138.00" Precision="0" Min="-300" Max="300" MinRange="60" Step="20"/>
+				<RightAxis DownBound="0" UpBound="20" Precision="1" Min="-1" Max="4" MinRange="1" Step="0.2"/>
+				<LineCurves>
+					<item Name="Velocity" Visible="1" Data="4" Width="1" Trend="0" IgnoreVacant="0" RightAligned="0"/>
+					<item Name="PI" Visible="1" Data="5" Width="1" Trend="0" IgnoreVacant="0" RightAligned="1"/>
+				</LineCurves>
+				<Index ShowChannelName="0" ChannelName="LMCA" Type="0">
+					<item Data="4" ShowInfo="1" ShowRange="0" ShowUnit="1" ShowPercent="1"/>
+					<item Data="5" ShowInfo="1" ShowRange="0" ShowUnit="0" ShowPercent="1"/>
+				</Index>
+			</Channel>
+			<Channel Index = "4" StretchFactor="1" Div="2">
+				<LeftAxis DownBound="-52.00" UpBound="188.00" Precision="0" Min="-300" Max="300" MinRange="60" Step="20"/>
+				<RightAxis DownBound="0" UpBound="2" Precision="1" Min="-1" Max="4" MinRange="1" Step="0.2"/>
+				<LineCurves>
+					<item Name="Velocity" Visible="1" Data="2" Width="1" Trend="0" IgnoreVacant="0" RightAligned="0"/>
+					<item Name="PI" Visible="1" Data="3" Width="1" Trend="0" IgnoreVacant="0" RightAligned="1"/>
+				</LineCurves>
+				<Index ShowChannelName="0" ChannelName="RMCA" Type="0">
+					<item Data="2" ShowInfo="1" ShowRange="0" ShowUnit="1" ShowPercent="1"/>
+					<item Data="3" ShowInfo="1" ShowRange="0" ShowUnit="0" ShowPercent="1"/>
+				</Index>
+			</Channel>
+			<Channel Index = "5" StretchFactor="1.8" Div="3">
+				<LeftAxis DownBound="35.00" UpBound="4035.00" Precision="0" Min="0" Max="6000" MinRange="1000" Step="500"/>
+				<AccCurves>
+					<item Name="VLF" Visible="1" Data="15" Width="1" IgnoreVacant="0" RightAligned="0"/>
+					<item Name="LF" Visible="1" Data="16" Width="1" IgnoreVacant="0" RightAligned="0"/>
+					<item Name="HF" Visible="1" Data="17" Width="1" IgnoreVacant="0" RightAligned="0"/>
+					<item Name="TP" Visible="1" Data="18" Width="1" IgnoreVacant="0" RightAligned="0"/>
+				</AccCurves>
+				<Index ShowChannelName="0" ChannelName="" Type="2">
+					<item Data="18" ShowInfo="1" ShowRange="0" ShowUnit="1" ShowPercent="1"/>
+					<item Data="15" ShowInfo="1" ShowRange="0" ShowUnit="0" ShowPercent="1"/>
+					<item Data="16" ShowInfo="1" ShowRange="0" ShowUnit="0" ShowPercent="1"/>
+					<item Data="17" ShowInfo="1" ShowRange="0" ShowUnit="0" ShowPercent="1"/>
+				</Index>
+			</Channel>
+			<Channel Index = "6" StretchFactor="1" Div="2">
+				<LeftAxis DownBound="50.00" UpBound="100.00" Precision="0"/>
+				<RightAxis DownBound="20.00" UpBound="40.00" Precision="0"/>
+				<LineCurves>
+					<item Name="NOS" Visible="1" Data="20" Width="1" Trend="0" IgnoreVacant="0" RightAligned="0"/>
+					<item Name="mS" Visible="1" Data="21" Width="1" Trend="0" IgnoreVacant="0" RightAligned="1"/>
+				</LineCurves>
+				<Index ShowChannelName="0" ChannelName="" Type="3">
+					<item Data="20" ShowInfo="1" ShowRange="0" ShowUnit="1" ShowPercent="1"/>
+					<item Data="21" ShowInfo="1" ShowRange="0" ShowUnit="1" ShowPercent="1"/>
+				</Index>
+			</Channel>
+		</RawPlot>
+	</PlotSetup>
+	<!-- 数据率 -->
+	<DataFreqSetup>20</DataFreqSetup>
+	<DataType>
+		<item ID="0" Name="HR" Min="40" Max="200" Unit="bpm" Precision="0" Color="ff408040"/>
+		<item ID="1" Name="IBI" Min="4096" Max="4096" Unit="bpm" Precision="0" Color="ffffffff"/>
+		<item ID="2" Name="Vmr" Min="-4096" Max="-4096" Unit="cm/s" Precision="0" Color="ffc8321e"/>
+		<item ID="3" Name="PIr" Min="-4096" Max="-4096" Unit="" Precision="0" Color="ff0064f0"/>
+		<item ID="4" Name="Vml" Min="-4096" Max="-4096" Unit="cm/s" Precision="0" Color="ffc8321e"/>
+		<item ID="5" Name="PIl" Min="-4096" Max="-4096" Unit="" Precision="0" Color="ff0064f0"/>
+		<item ID="6" Name="SBP" Min="70" Max="155" Unit="mmHg" Precision="0" Color="ffc8321e"/>
+		<item ID="7" Name="DBP" Min="50" Max="110" Unit="mmHg" Precision="0" Color="ffc8321e"/>
+		<item ID="8" Name="MBP" Min="50" Max="155" Unit="mmHg" Precision="0" Color="ffc8321e"/>
+		<item ID="9" Name="SV" Min="20" Max="160" Unit="mL" Precision="0" Color="ffd45200"/>
+		<item ID="10" Name="CO" Min="-4096" Max="-4096" Unit="L/min" Precision="1" Color="ff646464"/>
+		<item ID="11" Name="TPR" Min="-4096" Max="-4096" Unit="dyn*s/cm^-5" Precision="0" Color="ff6f2f9f"/>
+		<item ID="12" Name="CO2" Min="-4096" Max="-4096" Unit="%" Precision="1" Color="ffd45200"/>
+		<item ID="13" Name="RR" Min="10" Max="30" Unit="bpm" Precision="0" Color="ffd45200"/>
+		<item ID="14" Name="SpO2" Min="90" Max="100" Unit="%" Precision="0" Color="ffc8321e"/>
+		<item ID="15" Name="VLF" Min="-4096" Max="-4096" Unit="ms^2" Precision="0" Color="ffd45200"/>
+		<item ID="16" Name="LF" Min="-4096" Max="-4096" Unit="ms^2" Precision="0" Color="ffc8321e"/>
+		<item ID="17" Name="HF" Min="-4096" Max="-4096" Unit="ms^2" Precision="0" Color="ff408040"/>
+		<item ID="18" Name="TP" Min="-4096" Max="-4096" Unit="ms^2" Precision="0" Color="ff646464"/>
+		<item ID="19" Name="LF/HF" Min="-4096" Max="-4096" Unit="%" Precision="0" Color="ff000000"/>
+		<item ID="20" Name="NOS" Min="-4096" Max="-4096" Unit="" Precision="0" Color="ff0064f0"/>
+		<item ID="21" Name="mS" Min="-4096" Max="-4096" Unit="ms/mmHg" Precision="0" Color="ffd45200"/>
+	</DataType>
+	<Views>
+		<Colors>
+			<!-- 网格线颜色 -->
+			<Grid>ffcdcdcd</Grid>
+			<!-- 无效数据颜色 -->
+			<Invalid>ff969696</Invalid>
+			<!-- 背景色 -->
+			<Background>f0000000</Background>
+			<!-- 前景色 -->
+			<Foreground>ff000000</Foreground>
+			<!-- 指数区背景色 -->
+			<IndexBackground>ffffcc66</IndexBackground>
+		</Colors>
+		<Size>
+			<InvalidLineWidth>2</InvalidLineWidth>
+			<ScaleHMargin>3</ScaleHMargin>
+			<ScaleVMargin>4</ScaleVMargin>
+			<ChannelSpace>1</ChannelSpace>
+			<LegendWidth>12</LegendWidth>
+			<IndexWidth>200</IndexWidth>
+			<IndexHMargin>2</IndexHMargin>
+			<IndexVMargin>1</IndexVMargin>
+			<TimeLabelHeight>14</TimeLabelHeight>
+		</Size>
+		<Fonts>
+			<Scale family="Arial Narrow" size="8" bold="0"/>
+			<Legend family="Arial Narrow" size="8" bold="1"/>
+			<Title family="Arial" size="18" bold="1"/>
+			<IndexFullSizeValue family="Arial" size="26" bold="1"/>
+			<IndexMiddleSizeValue family="Arial" size="20" bold="1"/>
+			<IndexSmallSizeValue family="Arial" size="14" bold="1"/>
+			<IndexFullSizePercent family="Bahnschrift SemiCondensed" size="14" bold="1"/>
+			<IndexSmallSizePercent family="Bahnschrift SemiCondensed" size="12" bold="1"/>
+			<IndexFullSizeName family="Bahnschrift" size="12" bold="1"/>
+			<IndexSmallSizeName family="Bahnschrift" size="10" bold="1"/>
+			<IndexFullSizeUnit family="Bahnschrift" size="10" bold="0"/>
+			<IndexSmallSzieUnit family="Bahnschrift" size="8" bold="0"/>
+			<IndexFullSizeRange family="Arial" size="12" bold="1"/>
+			<IndexSmallSizeRange family="Arial" size="7" bold="1"/>
+		</Fonts>
+		<VerticalGrid>10</VerticalGrid>
+		<IndexTitleFactor>0.25</IndexTitleFactor>
+		<IndexBackAlpha>150</IndexBackAlpha>
+		<CurveAlpha>120</CurveAlpha>
+	</Views>
+	<!--标记列表样外观配置-->
+	<EventMarks>
+		<!--字体配置-->
+		<Font family = "arial" size = "15" bold = "1" />
+		<!--标记配置-->
+		<Mark type = "5" background = "#ffff0000" description = "血流信号丢失">
+			<Border style = "radius:3px" width = "0" color = "#00000000"/>
+		</Mark>	
+		<Mark type = "6" background = "#ffffa500" description = "血流信号找回">
+			<Border style = "radius:3px" width = "0" color = "#00000000"/>
+		</Mark>	
+		<Mark type = "7" background = "#ffff6347" description = "头晕">
+			<Border style = "radius:3px" width = "0" color = "#00000000"/>
+		</Mark>		
+		<Mark type = "8" background = "#ff00ff00" description = "胸闷">
+			<Border style = "radius:3px" width = "0" color = "#00000000"/>
+		</Mark>	
+		<Mark type = "9" background = "#ff0000ff" description = "乏力">
+			<Border style = "radius:3px" width = "0" color = "#00000000"/>
+		</Mark>	
+		<Mark type = "10" background = "#ff20b2aa" description = "呕吐">
+			<Border style = "radius:3px" width = "0" color = "#00000000"/>
+		</Mark>	
+		<Mark type = "11" background = "#ffa020f0" description = "恶心">
+			<Border style = "radius:3px" width = "0" color = "#00000000"/>
+		</Mark>
+		<Mark type = "12" background = "#ff8b4c39" description = "发汗">
+			<Border style = "radius:3px" width = "0" color = "#00000000"/>
+		</Mark>	
+		<Mark type = "13" background = "#dda0dd" description = "自定义">
+			<Border style = "radius:3px" width = "5" color = "#a01ef000"/>
+		</Mark>			
+	</EventMarks>
+	<!--选段统计信息配置-->
+	<Segment width = "200">
+		<Title family = "arial Narrow" size = "15" bold = "1" color = "#FFFFFF"/>
+		<Channels family = "arial Narrow" size = "15" bold = "0">
+			<!--多参数布局-->
+			<Layout LayoutType = "0">
+				<!--ECG-->
+				<Channel index = "0" count = "3" >
+					<Item type = "0" index = "1"/>
+				</Channel>
+				<!--NIBP-->
+				<Channel index = "1" count = "5">
+					<Item type = "5" index = "1"/>
+					<Item type = "7" index = "2"/>
+					<Item type = "6" index = "3"/>
+				</Channel>
+							<!--VMR PIR-->
+				<Channel index = "2" count = "4">
+					<Item type = "1" index = "1"/>
+					<Item type = "2" index = "2"/>
+				</Channel>
+							<!--VML PIL-->
+				<Channel index = "3" count = "4">
+					<Item type = "3" index = "1"/>
+					<Item type = "4" index = "2"/>
+				</Channel>
+							<!--SV-->
+				<Channel index = "4" count = "3">
+					<Item type = "8" index = "1"/>
+				</Channel>
+							<!--CO-->
+				<Channel index = "5" count = "3">
+					<Item type = "9" index = "1"/>
+				</Channel>
+							<!--SVR-->
+				<Channel index = "6" count = "3">
+					<Item type = "10" index = "1"/>
+				</Channel>
+							<!--RR-->
+				<Channel index = "7" count = "3">
+					<Item type = "11" index = "1"/>
+				</Channel>
+							<!--SPO2-->
+				<Channel index = "8" count = "3">
+					<Item type = "12" index = "1"/>
+				</Channel>
+							<!--HRV-->
+				<Channel index = "9" count = "6">
+					<Item type = "13" index = "1"/>
+					<Item type = "14" index = "2"/>
+					<Item type = "15" index = "3"/>
+					<Item type = "16" index = "4"/>
+				</Channel>
+							<!--LF/HF-->
+				<Channel index = "10" count = "3">
+					<Item type = "17" index = "1"/>
+				</Channel>
+							<!--Slop-->
+				<Channel index = "11" count = "4">
+					<Item type = "18" index = "1"/>
+					<Item type = "19" index = "2"/>
+				</Channel>
+			</Layout>	
+			<!--ECG布局-->
+			<Layout LayoutType = "1">
+							<!--I-->
+				<Channel index = "12" count = "3">
+					<Item type = "20" index = "1"/>
+				</Channel>
+							<!--II-->
+				<Channel index = "13" count = "3">
+					<Item type = "21" index = "1"/>
+				</Channel>	
+							<!--III-->
+				<Channel index = "14" count = "3">
+					<Item type = "22" index = "1"/>
+				</Channel>	
+							<!--AVR-->
+				<Channel index = "15" count = "3">
+					<Item type = "23" index = "1"/>
+				</Channel>	
+							<!--AVL-->
+				<Channel index = "16" count = "3">
+					<Item type = "24" index = "1"/>
+				</Channel>	
+							<!--AVF-->
+				<Channel index = "17" count = "3">
+					<Item type = "25" index = "1"/>
+				</Channel>
+							<!--V1-->
+				<Channel index = "18" count = "3">
+					<Item type = "26" index = "1"/>
+				</Channel>
+							<!--V2-->
+				<Channel index = "19" count = "3">
+					<Item type = "27" index = "1"/>
+				</Channel>
+							<!--V3-->
+				<Channel index = "20" count = "3">
+					<Item type = "28" index = "1"/>
+				</Channel>
+							<!--V4-->
+				<Channel index = "21" count = "3">
+					<Item type = "29" index = "1"/>
+				</Channel>
+							<!--V5-->
+				<Channel index = "22" count = "3">
+					<Item type = "30" index = "1"/>
+				</Channel>
+							<!--V6-->
+				<Channel index = "23" count = "3">
+					<Item type = "31" index = "1"/>
+				</Channel>
+				</Layout>
+		</Channels>
+	</Segment>
+</SysConfig>

@@ -1,0 +1,5 @@
+2020.10
+1.事件标记功能
+2.选段控件
+2020.11.3
+1.添加选段菜单控件，添加4个文件SegMenu.h,SegMenu.cpp,SegMenuItem.h,SegMenuItem.cpp
